@@ -1,38 +1,20 @@
-import Image from "next/image";
-import SignatureCat from "@/components/SignatureCat";
-
-const reflections = [
-  "What God is teaching me in this season",
-  "Learning to trust even when I do not understand",
-  "What prayer is changing in me"
-];
-
 export default function RootedPage() {
   return (
-    <section className="section-pad">
-      <div className="container-page">
-        <div className="mx-auto mb-14 max-w-4xl text-center">
-          <div className="mx-auto mb-6 w-fit rounded-[2rem] border border-plum/10 bg-white/70 p-4 shadow-soft">
-            <Image
-              src="/images/rooted-faith.jpg"
-              alt="Rooted faith image"
-              width={240}
-              height={240}
-              className="h-auto w-[180px] rounded-2xl md:w-[220px]"
-            />
-          </div>
+    <main className="min-h-screen bg-parchment px-6 py-16">
+      <div className="mx-auto max-w-5xl">
+        
+        {/* Page Title */}
+        <h1 className="mb-6 text-center text-4xl text-plum">
+          Rooted
+        </h1>
 
-          <p className="eyebrow mb-3">Rooted</p>
-          <h1 className="page-title mb-4 text-plum">Faith</h1>
-          <p className="mb-4 text-xl italic text-gold">
-            Faith • Heritage • Resilience
-          </p>
-          <p className="mx-auto max-w-3xl text-xl leading-9 text-charcoal/80">
-            A space where my relationship with God is deepened through Scripture,
-            prayer, reflection, and lived experience.
-          </p>
-        </div>
+        {/* Page Intro */}
+        <p className="mx-auto mb-12 max-w-3xl text-center text-lg leading-8 text-charcoal/80">
+          A space where my relationship with God is deepened through Scripture,
+          prayer, reflection, and lived experience.
+        </p>
 
+        {/* Intro Card */}
         <div className="mx-auto mb-12 max-w-4xl rounded-[2rem] border border-plum/10 bg-white/70 p-8 shadow-soft md:p-10">
           <p className="text-lg leading-9 text-charcoal/85">
             Rooted is the spiritual foundation of Mozue. Here, I document what I
@@ -42,68 +24,78 @@ export default function RootedPage() {
           </p>
         </div>
 
+        {/* ✨ Featured Easter Post */}
+        <div className="mx-auto mb-16 max-w-4xl rounded-[2rem] border border-gold/20 bg-parchment/60 p-8 shadow-soft md:p-10">
+          <p className="mb-3 text-xs uppercase tracking-[0.24em] text-gold">
+            April 20, 2025 • Rooted
+          </p>
+
+          <h2 className="mb-6 text-3xl text-plum">
+            Easter: A Beginning in Hope
+          </h2>
+
+          <div className="space-y-5 text-lg leading-9 text-charcoal/85">
+            <p>This Easter feels different for me.</p>
+
+            <p>
+              I’m beginning a deeper season of faith—a three-year journey of studying
+              the Bible more intentionally, more slowly, and with a heart that is open
+              to learning, not just knowing.
+            </p>
+
+            <p>
+              I don’t come into this with all the answers. I come with questions, with
+              curiosity, and with a desire to grow closer to God in a real and steady way.
+            </p>
+
+            <p>
+              Easter reminds me that renewal is not something we force—it’s something
+              God does. In His time, in His way.
+            </p>
+
+            <p className="italic text-plum">
+              “He is not here; He has risen, just as He said.” — Matthew 28:6
+            </p>
+
+            <p>
+              That truth is simple, but it holds everything—hope, grace, and the promise
+              that new life is always possible, even when we don’t yet see it.
+            </p>
+
+            <p>
+              Today, I’m choosing to begin this journey with faith, humility, and trust.
+            </p>
+
+            <p className="pt-4 font-medium text-plum">
+              Quietly becoming, rooted in hope.
+            </p>
+          </div>
+        </div>
+
+        {/* Category Cards */}
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="card overflow-hidden">
-            <div className="mb-4 flex h-36 items-center justify-center overflow-hidden rounded-2xl bg-parchment">
-              <img
-                src="/images/rooted-faith-cropped.jpg"
-                alt="My Walk with God"
-                className="h-32 w-auto object-contain"
-              />
-            </div>
-            <h2 className="mb-2 text-2xl text-plum">My Walk with God</h2>
-            <p className="leading-8 text-charcoal/80">
-              Personal reflections on faith, growth, spiritual lessons, and the
-              quiet evolution of my relationship with God.
+          
+          <div className="rounded-[2rem] border border-plum/10 bg-white/70 p-6 shadow-soft">
+            <div className="mb-4 h-40 rounded-xl bg-sand/40" />
+            <h3 className="mb-2 text-xl text-plum">My Walk with God</h3>
+            <p className="text-charcoal/75">
+              Personal reflections on faith, growth, spiritual lessons, and the quiet
+              evolution of my relationship with God.
             </p>
           </div>
 
-          <div className="card overflow-hidden">
-            <div className="mb-4 flex h-36 items-center justify-center overflow-hidden rounded-2xl bg-parchment">
-              <img
-                src="/images/field-notes-cropped.jpg"
-                alt="Prayer and peace"
-                className="h-32 w-auto object-contain"
-              />
-            </div>
-            <h2 className="mb-2 text-2xl text-plum">Prayer & Peace</h2>
-            <p className="leading-8 text-charcoal/80">
+          <div className="rounded-[2rem] border border-plum/10 bg-white/70 p-6 shadow-soft">
+            <div className="mb-4 h-40 rounded-xl bg-sand/40" />
+            <h3 className="mb-2 text-xl text-plum">Prayer & Peace</h3>
+            <p className="text-charcoal/75">
               What I am learning through prayer, stillness, surrender, and making
               room for God in the quiet.
             </p>
           </div>
 
-          <div className="card md:col-span-2">
-            <h2 className="mb-2 text-2xl text-plum">In the Word</h2>
-            <p className="leading-8 text-charcoal/80">
-              Scripture reflections, Bible study notes, and lessons that come
-              from sitting with the Word and listening carefully.
-            </p>
-          </div>
         </div>
 
-        <div className="mx-auto mt-14 max-w-4xl rounded-[2rem] border border-plum/10 bg-white/70 p-8 shadow-soft">
-          <h2 className="mb-6 text-center text-3xl text-plum">
-            Recent Reflections
-          </h2>
-
-          <div className="grid gap-4 md:grid-cols-3">
-            {reflections.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-gold/20 bg-parchment/60 p-5"
-              >
-                <p className="mb-2 text-xs uppercase tracking-[0.24em] text-gold">
-                  Field Note
-                </p>
-                <p className="text-xl leading-8 text-plum">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <SignatureCat />
       </div>
-    </section>
+    </main>
   );
 }
